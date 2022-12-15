@@ -129,7 +129,7 @@
 
 /* nav */ 
 .nav-hidden {
-    display: none;
+    display: flex;
 }
 .nav-deploy {
     position: fixed;
@@ -224,6 +224,19 @@
     align-items: center;
 }
 
+/* CAROUSEL */
+.slider {
+    background-color: #d9d9d9;
+}
+.slider .items {
+    margin: 0 3.125em;
+}
+.slider .items img {
+    width: 9.375em;
+    filter: grayscale(1);
+    margin: 0 auto;
+}
+
 /* Segundo Scroll */
 .home-nextLevel {
     width: 90%;
@@ -246,7 +259,7 @@
 }
 
 .informative-nextLevel p {
-    font-size: 1.60em;
+    font-size: 1.66em;
 }
 
 /* Terceiro Scroll */
@@ -491,4 +504,373 @@
     display: none;
     padding: 1% 2%;
     font-size: 1.3em;
+}
+
+/* Resolução - Desktop HD */
+@media only screen and (min-width: 1250px) and (max-width: 1440px){
+    .body{
+        font-size: 0.72em;
+    }
+
+    /* Primeiro/Segundo Scroll */
+    .informative-nextLevel p{
+        font-size: 1.65em;
+    }
+
+    /* Terceiro/Quarto/Quinto Scroll */
+    .card-public{
+        height: 17.5rem;
+    }
+
+    /* Sexto Scroll */
+    .card-mentors{
+        border-radius: 8.125rem 1.25rem 1.25rem 1.25rem;
+    }
+    
+    @media only screen and (min-width: 1400px) and (max-width: 1600px){
+        /*Segundo Scroll */
+        .informative-nextLevel p {
+            font-size: 1.73em;
+        }
+    }
+}
+
+/* Tablet/iPad */
+@media (max-width: 800px) {
+    .mobile { display: block !important; }
+    .desktop { display: none !important; }
+    
+    .body { font-size: 0.72em; }
+
+    /* Utilizado em várias partes (assim como fiz anteriormente)  */
+    .subTitle-mentorships {
+        font-size: 3em;
+    }
+
+    /* Botões */
+    .btn-purple {
+        font-size: 2.8em;
+        padding: 3% 5%;
+    }
+
+    /* Nav */ 
+    .fixed {
+        position: fixed;
+        width: 100%;
+        z-index: 500;
+    }
+    .nav-mobile {
+        background-color: #ffffff;
+        height: 8vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 3%;
+    }
+    .icon-nav {
+        width: 7%;
+    }
+    .links-hidden {
+        display: none;
+    }
+    .links-mobile {
+        height: 70vh;
+        background-color: #ffffff;
+        border-radius: 0 0 0 2.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 5% 10%;
+        justify-content: space-between;
+    }
+    .links-mobile a {
+        font-family: "ProximaNova-Bold";
+        font-size: 3em;
+        color: #000000;
+        text-decoration: none;
+    }
+
+    /* Primeiro Scroll */
+    .home-mentorships {
+        background-image: url('./../assets/backgrounds/bg-mentorships-tb.png');
+    }
+    .card-home {
+        width: 95%;
+        margin: 2% 0 15%;
+        padding: 5%;
+        flex-wrap: wrap;
+        margin-top: 10vh;
+    }
+    .informative-home {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 8%;
+    }
+    .tag {
+        font-size: 2.2em;
+        padding: 0 6%;
+    }
+    .title-home {
+        line-height: 1.5em;
+        margin: 3% 0 5%;
+        padding: 0;
+    }
+    .subTitle-home {
+        font-size: 2.5em;
+    }
+    .description-home {
+        font-size: 2.3em;
+        margin: 3% 0 10%;
+    }
+    .image-home {
+        width: 100%;
+        text-align: center;
+    }
+    .link-below img {
+        width: 6%;
+    }
+    .title-customers {
+        font-size: 3em;
+        margin-bottom: 5%;
+    }
+
+    /* Segundo Scroll */
+    .home-nextLevel {
+        width: 85%;
+        flex-wrap: wrap;
+        padding-top: 10%;
+    }
+    .video-nextLevel {
+        width: 100%;
+        padding-top: 10%;
+    }
+    .informative-nextLevel {
+        width: 100%;
+    }
+    .informative-nextLevel p {
+        font-size: 2.5em;
+    }
+
+    /* Terceiro Scroll */
+    .how-works {
+        width: 100%;
+        padding-top: 15%;
+    }
+    .works {
+        overflow-x: auto;
+        padding: 0 8%;
+    }
+    .works::-webkit-scrollbar {
+        display: none;
+    }
+    .card-works {
+        padding: 5% 2%;
+        font-size: 1.65em;
+    }
+    .card-works-description {
+        width: 12.5rem;
+    }
+    .works-description {
+        width: 80%;
+    }
+
+    /* Quarto Scroll */
+    .learn {
+        width: 85%;
+        padding-top: 15%;
+    }
+    .card-learn {
+        font-size: 2.4em;
+        margin-bottom: 2%;
+    }
+
+    /* Quinto Scroll */
+    .indicated {
+        width: 85%;
+        padding-top: 15%;
+    }
+    .indicated .title-mentorships {
+        padding: 0;
+    }
+    .target-audience {
+        flex-wrap: wrap;
+    }
+    .card-public {
+        height: 20.3125rem;
+        width: 47.5%;
+        padding: 5%;
+        font-size: 2.2em;
+        margin-bottom: 5%;
+    }
+
+    /* Sexto Scroll */
+    .mentors { padding-top: 15%; }
+    .align-mentors {
+        flex-wrap: wrap;
+    }
+    .card-mentors {
+        padding: 8%;
+        border-radius: 9.375rem 1.25rem 1.25rem 1.25rem;
+        margin-bottom: 5%;
+    }
+
+    /* Sétimo Scroll */
+    .students {
+        width: 85%;
+        padding-top: 15%;
+    }
+    .align-testimonial {
+        flex-wrap: wrap;
+    }
+    .testimonial img {
+        width: 80%;
+    }
+    .float-left { float: left; }
+    .float-right { float: right; }
+
+    /* Oitavo Scroll */
+    .price { padding-top: 15%; }
+    .value {
+        margin: 3% 0;
+    }
+    .benefits {
+        padding: 4%;
+        width: 90%;
+    }
+    .btn-subscription {
+        width: 75%;
+    }
+
+    /* Nono Scroll */
+    .title-faq {
+        padding: 5% 30%;
+    }
+    .questions {
+        padding: 2%;
+    }
+    .questions p {
+        font-size: 2em;
+    }
+    .answer {
+        padding: 2%;
+        font-size: 1.8em;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+    .body { font-size: 0.42em; }
+
+    /* Utilizado em vários lugares */
+    .title-mentorships {
+        font-size: 3.2em;
+    }
+    .subTitle-mentorships {
+        font-size: 2.5em;
+    }
+
+    /* NAV */ 
+    .icon-nav {
+        width: 10%;
+    }
+    .links-mobile {
+        padding: 15% 10%;
+    }
+
+    /* Primeiro scroll */
+    .home-mentorships {
+        background-image: url('./../assets/backgrounds/bg-mentorships-mb.png');
+    }
+    .card-home {
+        border-radius: 0.625rem;
+    }
+    .informative-home {
+        margin: 0;
+    }
+    .tag {
+        border-radius: 0.3125rem;
+    }
+    .link-below img {
+        width: 8%;
+    }
+
+    /* Segundo Scroll */
+    .home-nextLevel { padding-top: 20%; }
+    .video {
+        border-radius: 0.625rem;
+    }
+    .informative-nextLevel p {
+        font-size: 2.2em;
+    }
+
+    /* Terceiro Scroll */
+    .how-works { padding-top: 20%; }
+    .card-works {
+        border-radius: 0.9375rem;
+    }
+    .card-works-description {
+        width: 7.5rem;
+    }
+    .works-description p {
+        font-size: 2.4em;
+        margin-bottom: 5%;
+    }
+
+    /* Quarto Scroll */
+    .learn { padding-top: 20%; }
+    .card-learn {
+        font-size: 2em;
+    }
+
+    /* Quinto Scroll */
+    .indicated { padding-top: 20%; }
+    .card-public {
+        height: 9.3125rem;
+        font-size: 1.8em;
+        border-radius: 0.625rem;
+    }
+
+    /* Sexto Scroll */
+    .mentors { padding-top: 20%; }
+    .card-mentors {
+        border-radius: 4.375rem 1.25rem 1.25rem 1.25rem;
+    }
+    .card-mentors p {
+        font-size: 1.8em;
+    }
+
+    /* Sétimo Scroll */
+    .students { padding-top: 20%; }
+
+    /* Oitavo Scroll */
+    .price {
+        padding: 20% 0 10%;
+    }
+    .benefits {
+        padding: 5%;
+    }
+
+    /* Nono Scroll */
+    .card-faq {
+        border-radius: 0.3125rem;
+    }
+    .questions {
+        padding: 3%;
+    }
+    .answer {
+        padding: 3%;
+    }
+}
+
+/* g4 */
+@media (max-width: 365px) {
+    .body { font-size: 0.4em; }
+}
+
+/* Pixel 2 XL - iPhone 6/7/8 Plus */
+@media only screen and (min-width: 400px) and (max-width: 420px) {
+    .body { font-size: 0.46em; }
 }

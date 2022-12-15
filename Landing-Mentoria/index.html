@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+
     <link rel="icon" type="image/svg" href="assets/logo/lg-deploy-icon.svg">
     <title>Teste Deploy</title>
+    <link rel="stylesheet" href="css/slick.css">
 </head>
 
 <body class="body">
@@ -17,6 +19,7 @@
         <img src="./assets/image/img-detail2.png" class="img-detail3" alt="">
         <img src="./assets/image/img-detail3.png" class="img-detail4" alt="">
 
+        <!-- Navbar Desktop -->
         <div class="nav-hidden">
             <div class="nav-deploy">
                 <a href="#home">
@@ -34,7 +37,7 @@
                 </div>
             </div>
         </div>
-        <!-- nav mobile -->
+        <!-- Nav Mobile -->
         <div class="mobile fixed">
             <div class="nav-mobile ">
                 <a href="#home" onclick="openNav('false')">
@@ -84,13 +87,39 @@
                     <div class="image-home desktop">
                         <img src="./assets/image/img-informative.png" alt="image-informative">
                     </div>
-
+                    <div class="image-home mobile">
+                        <img src="./assets/image/img-informative-mb.png" alt="image-informative">
+                        <a class="link-below" href="">
+                            <img src="./assets/icons/i-below-white.svg" alt="icon-below">
+                        </a>
+                    </div>
                 </div>
                 <div class="title-customers">
                     Alguns de nossos clientes:
                 </div>
             </div>
         </section>
+
+        <!--  CAROUSEL  -->
+        <div class="slider autoplay">
+            <div class="items"><img src="./assets/logo/lg-2w-energia.svg" alt=""></div>
+            <div class="items"><img src="./assets/logo/lg-4student.svg" alt=""></div>
+            <div class="items"><img src="./assets/logo/lg-coliiv.svg" alt=""></div>
+            <div class="items"><img src="./assets/logo/lg-colorado.svg" alt=""></div>
+            <div class="items"><img src="./assets/logo/lg-corona.svg" alt=""></div>
+            <div class="items"><img src="./assets/logo/lg-eyemobile.svg" alt=""></div>
+            <div class="items"><img src="./assets/logo/lg-gophone.svg" alt=""></div>
+            <div class="items"><img src="./assets/logo/lg-hoengaarden.svg" alt=""></div>
+            <div class="items"><img src="./assets/logo/lg-jansport.svg" alt=""></div>
+            <div class="items"><img src="./assets/logo/lg-kipling.svg" alt=""></div>
+            <div class="items"><img src="./assets/logo/lg-meisou.svg" alt=""></div>
+            <div class="items"><img src="./assets/logo/lg-qi-network.svg" alt=""></div>
+            <div class="items"><img src="./assets/logo/lg-receita-digital.svg" alt=""></div>
+            <div class="items"><img src="./assets/logo/lg-red-nose.svg" alt=""></div>
+            <div class="items"><img src="./assets/logo/lg-rossi.svg" alt=""></div>
+            <div class="items"><img src="./assets/logo/lg-safe2go.svg" alt=""></div>
+            <div class="items"><img src="./assets/logo/lg-worc.svg" alt=""></div>
+        </div>
 
         <!-- Segundo Scroll - Next Level -->
         <section id="nextLevel">
@@ -343,7 +372,8 @@
                             <img src="./assets/icons/i-open-faq.svg" class="i-faq" alt="">
                         </div>
                         <div class="answer">
-                            Sim, ao final do programa você recebe um certificado que pode ser utilizado no seu currículo ou faculdade.
+                            Sim, ao final do programa você recebe um certificado que pode ser utilizado no seu currículo
+                            ou faculdade.
                         </div>
                     </div>
                     <div class="card-faq">
@@ -361,7 +391,8 @@
                             <img src="./assets/icons/i-open-faq.svg" class="i-faq" alt="">
                         </div>
                         <div class="answer">
-                            Você pode finalizar sua compra com o cartão de crédito, parcelando em até 10x, ou também pode pagar à vista no boleto ou PIX.
+                            Você pode finalizar sua compra com o cartão de crédito, parcelando em até 10x, ou também
+                            pode pagar à vista no boleto ou PIX.
                         </div>
                     </div>
                 </div>
@@ -370,3 +401,8 @@
 </body>
 
 </html>
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/mentorships.js"></script>
