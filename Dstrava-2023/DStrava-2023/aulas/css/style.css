@@ -1,0 +1,905 @@
+@font-face {
+    font-family: 'ProximaNova-Regular';
+    src: url('../assets/fonts/ProximaNova-Regular/ProximaNova-Regular.eot');
+    src: url('../assets/fonts/ProximaNova-Regular/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/ProximaNova-Regular/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg'),
+        url('../assets/fonts/ProximaNova-Regular/ProximaNova-Regular.ttf') format('truetype'),
+        url('../assets/fonts/ProximaNova-Regular/ProximaNova-Regular.woff') format('woff'),
+        url('../assets/fonts/ProximaNova-Regular/ProximaNova-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ProximaNova-Bold';
+    src: url('../assets/fonts/ProximaNova-Bold/ProximaNova-Bold.eot');
+    src: url('../assets/fonts/ProximaNova-Bold/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/ProximaNova-Bold/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg'),
+        url('../assets/fonts/ProximaNova-Bold/ProximaNova-Bold.ttf') format('truetype'),
+        url('../assets/fonts/ProximaNova-Bold/ProximaNova-Bold.woff') format('woff'),
+        url('../assets/fonts/ProximaNova-Bold/ProximaNova-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Termina-W00-Demi';
+    src: url('../assets/fonts/Termina-W00-Demi/Termina-W00-Demi.eot');
+    src: url('../assets/fonts/Termina-W00-Demi/Termina-W00-Demi.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/Termina-W00-Demi/Termina-W00-Demi.svg#Termina W00 Demi') format('svg'),
+        url('../assets/fonts/Termina-W00-Demi/Termina-W00-Demi.ttf') format('truetype'),
+        url('../assets/fonts/Termina-W00-Demi/Termina-W00-Demi.woff') format('woff'),
+        url('../assets/fonts/Termina-W00-Demi/Termina-W00-Demi.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+/* @font-face {
+    font-family: 'SpaceGrotesk-Medium';
+    src: url('../assets/fonts/Space_Grotesk/SpaceGrotesk-Medium.eot');
+    src: url('../assets/fonts/Space_Grotesk/SpaceGrotesk-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/Space_Grotesk/SpaceGrotesk-Medium.svg#SpaceGrotesk-Medium') format('svg'),
+        url('../assets/fonts/Space_Grotesk/SpaceGrotesk-Medium.ttf') format('truetype'),
+        url('../assets/fonts/Space_Grotesk/SpaceGrotesk-Medium.woff') format('woff'),
+        url('../assets/fonts/Space_Grotesk/SpaceGrotesk-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}   */
+/* @font-face {
+    font-family: 'Rubik-Medium';
+    src: url('../assets/fonts/Rubik-Medium/Rubik-Medium.eot');
+    src: url('../assets/fonts/Rubik-Medium/Rubik-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/Rubik-Medium/Rubik-Medium.svg#Rubik-Medium') format('svg'),
+        url('../assets/fonts/Rubik-Medium/Rubik-Medium.ttf') format('truetype'),
+        url('../assets/fonts/Rubik-Medium/Rubik-Medium.woff') format('woff'),
+        url('../assets/fonts/Rubik-Medium/Rubik-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+} */
+/* @font-face {
+    font-family: 'Rubik-Light';
+    src: url('../assets/fonts/Rubik-Light/Rubik-Light.eot');
+    src: url('../assets/fonts/Rubik-Light/Rubik-Light.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/Rubik-Light/Rubik-Light.svg#Rubik-Light') format('svg'),
+        url('../assets/fonts/Rubik-Light/Rubik-Light.ttf') format('truetype'),
+        url('../assets/fonts/Rubik-Light/Rubik-Light.woff') format('woff'),
+        url('../assets/fonts/Rubik-Light/Rubik-Light.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+} */
+body { position: relative; }
+.lp-sale-fund {
+    position: relative;
+    background-color: #381B4D;
+}
+.effect-1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+}
+.effect-2 {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 45%;
+}
+
+.mobile {
+    display: none !important;
+}
+.desktop {
+    display: block !important;
+}
+/* classes utilizadas em varios lugares */
+.position { position: relative; }
+.bg-conteudo {
+    position: relative;
+    background-color: #381B4D;
+}
+.alignment {
+    width: 90%;
+    margin: 0 auto;
+}
+.txt-center { text-align: center; }
+.title {
+    font-family: 'ProximaNova-Bold';
+    font-size: 3.5em;
+    color: #FFFFFF;
+    padding: 3% 0;
+    line-height: 1em;
+}
+
+.btn-call {
+    font-family: 'ProximaNova-Bold';
+    font-size: 1.5em;
+    color: #FFFFFF;
+    background-color: #4EAB4C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    padding: 2% 10%;
+    border-radius: 50px;
+    border: 2px solid #4EAB4C;
+    text-decoration: none;
+}
+.btn-call img {
+    width: 6%;
+    margin-right: 3%;
+}
+.btn-call:hover {
+    color: #4EAB4C;
+    background-color: transparent;
+}
+.btn-subscription {
+    font-family: 'ProximaNova-Bold';
+    font-size: 1.5em;
+    color: #FFFFFF;
+    background-color: #4EAB4C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    padding: 2% 10%;
+    border-radius: 50px;
+    border: 2px solid #4EAB4C;
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn-subscription img {
+    width: 8%;
+    margin-right: 3%;
+}
+.btn-subscription:hover {
+    color: #4EAB4C;
+    background-color: transparent
+}
+.btn-acknowledgment {
+    font-family: 'ProximaNova-Bold';
+    font-size: 1.5em;
+    color: #FFFFFF;
+    background-color: #8D4BBA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    padding: 2% 5%;
+    border-radius: 50px;
+    border: 2px solid #8D4BBA;
+    text-decoration: none;
+    cursor: pointer;
+    width: fit-content;
+    margin: 0 auto;
+}
+.btn-acknowledgment img {
+    width: 8%;
+    margin-right: 3%;
+}
+.btn-acknowledgment:hover {
+    color: #8D4BBA;
+    background-color: transparent
+}
+.btn-whatsapp {
+    font-family: 'ProximaNova-Bold';
+    font-size: 1.5em;
+    color: #FFFFFF;
+    background-color: #29A926;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    padding: 2% 5%;
+    border-radius: 50px;
+    border: 2px solid #29A926;
+    text-decoration: none;
+    cursor: pointer;
+    width: fit-content;
+    margin: 0 auto;
+}
+.btn-whatsapp img {
+    width: 15%;
+    margin-right: 3%;
+}
+.btn-whatsapp:hover {
+    color: #FFFFFF;
+    background-color: transparent
+}
+.btn-channel {
+    font-family: 'ProximaNova-Bold';
+    font-size: 1.5em;
+    color: #FFFFFF;
+    background-color: #F12F2F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    padding: 2% 5%;
+    border-radius: 50px;
+    border: 2px solid #F12F2F;
+    text-decoration: none;
+    cursor: pointer;
+    width: fit-content;
+    margin: 0 auto;
+}
+.btn-channel img {
+    width: 15%;
+    margin-right: 3%;
+}
+.btn-channel:hover {
+    color: #FFFFFF;
+    background-color: transparent
+}
+.btn-whatsapp-group {
+    font-family: 'ProximaNova-Bold';
+    font-size: 1.5em;
+    color: #FFFFFF;
+    background-color: #4EAB4C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    padding: 2% 5%;
+    border-radius: 10px;
+    border: 2px solid #4EAB4C;
+    text-decoration: none;
+    cursor: pointer;
+    width: fit-content;
+    margin: 0 auto;
+}
+.btn-whatsapp-group img {
+    width: 15%;
+    margin-right: 3%;
+}
+.btn-whatsapp-group:hover {
+    color: #FFFFFF;
+    background-color: transparent;
+}
+.btn-download {
+    font-family: 'ProximaNova-Bold';
+    font-size: 1.5em;
+    color: #FFFFFF;
+    background-color: #3CB0FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    padding: 2% 5%;
+    border-radius: 10px;
+    border: 2px solid #3CB0FF;
+    text-decoration: none;
+    cursor: pointer;
+    width: fit-content;
+    margin: 0 auto;
+}
+.btn-download img {
+    width: 15%;
+    margin-right: 3%;
+}
+.btn-download:hover {
+    color: #FFFFFF;
+    background-color: transparent;
+}
+/* 1° scroll */
+.logo-deploy {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    width: 7%;
+}
+.call {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    color: #FFFFFF;
+    padding: 7% 0 5%;
+    display: flex;
+    gap: 10%;
+}
+.info-call {
+    width: 100%;
+    font-size: 1em;
+}
+.tag-green {
+    font-family: 'ProximaNova-Bold';
+    font-size: 2.2em;
+    color: #29A926;
+    text-transform: uppercase;
+    background-color: #CEEDC2;
+    width: fit-content;
+    padding: 0.5% 2%;
+    border-radius: 0.9375rem;
+    margin-bottom: 2%;
+}
+.tag-purple {
+    font-family: 'ProximaNova-Bold';
+    font-size: 3em;
+    text-transform: uppercase;
+    background-color: #8D4BBA;
+    width: fit-content;
+    padding: 0.5% 2%;
+    border-radius: 0.9375rem;
+    margin-bottom: 2%;
+}
+.description-call {
+    font-family: 'ProximaNova-Bold';
+    font-size: 1.8em;
+    margin-bottom: 5%;
+}
+.data-call {
+    font-family: 'ProximaNova-Regular';
+    font-size: 2.8em;
+    color: #FF87BE;
+}
+.price-call {
+    font-family: 'ProximaNova-Regular';
+    margin-bottom: 5%;
+}
+.price-call span {
+    font-size: 1.8em;
+    text-decoration: line-through;
+}
+.value-call { font-size: 4em; }
+.video-call { width: 100%; }
+.video-call iframe {
+    width: 100%;
+    height: 60%;
+    border-radius: 1.25rem;
+    margin-top: 5%;
+}
+/* 2° scroll */
+.classroom {
+    display: flex;
+    justify-content: space-between;
+}
+.card-classroom {
+    width: 25%;
+    font-family: 'ProximaNova-Bold';
+    color: #FFFFFF;
+    font-size: 1em;
+}
+.card-classroom img {
+    width: 100%;
+    border-radius: 1.25rem;
+}
+.number-classroom {
+    font-size: 3em;
+    color: #8D4BBA;
+    border: 0.1875rem solid #8D4BBA;
+    border-radius: 0.9375rem;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6.25rem;
+    width: 6.25rem;
+    margin: 5% 0;
+}
+.card-classroom h3 { font-size: 2.3em; }
+.card-classroom p {
+    font-family: 'ProximaNova-Regular';
+    font-size: 2em;
+}
+/* 3° scroll */
+.edition {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    padding: 3% 0;
+}
+.info-edition { width: 100%; }
+.info-edition img { width: 10%; }
+.video-edition {
+    width: 100%;
+    text-align: center;
+}
+.video-edition video {
+    width: 55%;
+    border-radius: 3.75rem;
+}
+/* 4° scroll */
+.testimonials {
+    width: 90%;
+    display: flex;
+    gap: 2%;
+    margin: 0 auto;
+}
+.column-testimonials { width: 100%; }
+.column-testimonials img {
+    width: 100%;
+    margin-bottom: 2%;
+}
+/* 5° scroll */
+.space-subscription { padding: 5% 0; }
+.card-subscription {
+    position: relative;
+    width: 80%;
+    background-color: #FFFFFF;
+    padding: 2%;
+    border-radius: 1.25rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.card-subscription::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    height: 90%;
+    width: 0.0625rem;
+    background-color: #CCCCCC;
+}
+.info-subscription {
+    width: 50%;
+    padding-right: 5%;
+}
+.info-subscription img { width: 100%; }
+.benefits {
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+}
+.icon-benefits {
+    height: 6.25rem;
+    width: 6.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F7FA;
+    border-radius: 50%;
+    margin-right: 3%;
+}
+.icon-benefits img { width: 50%; }
+.benefits p {
+    font-family: 'ProximaNova-Bold';
+    font-size: 1.5em;
+    margin: 0%;
+    width: 40%;
+}
+.form-dstrava {
+    width: 50%;
+    padding-left: 5%;
+}
+.form-subscription {
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+}
+.title-form {
+    font-family: 'ProximaNova-Bold';
+    font-size: 4em;
+    color: #8D4BBA;
+    margin-bottom: 3%;
+}
+.form-subscription input {
+    font-family: 'ProximaNova-Regular';
+    font-size: 1.5em;
+    padding: 2%;
+    border: 0.0625rem solid #000000;
+    border-radius: 0.625rem;
+    margin-bottom: 2%;
+}
+/* 6° scroll */
+.space-teacher { padding-bottom: 10%; }
+.card-teacher {
+    width: 80%;
+    background-color: #FFFFFF;
+    padding: 2%;
+    border-radius: 1.25rem;
+    margin: 0 auto;
+    font-size: 1em;
+}
+.title-teacher {
+    font-family: 'ProximaNova-Bold';
+    font-size: 3.5em;
+    color: #8D4BBA;
+    line-height: 1em;
+    text-align: center;
+    margin-bottom: 3%;
+}
+.teacher { display: flex; }
+.image-teacher { width: 10%; }
+.image-teacher img { width: 100%; }
+.description-teacher {
+    width: 90%;
+    padding-left: 3%;
+    font-family: 'ProximaNova-Regular';
+    margin-top: 2%;
+}
+.name {
+    font-family: 'ProximaNova-Bold';
+    font-size: 1.8em;
+}
+.office {
+    font-size: 1.2em;
+    color: #8D4BBA;
+}
+.description-teacher p {
+    font-size: 1.4em;
+    color: #7D7D7D;
+    margin: 3% 0 0 0;
+}
+.title-companies {
+    font-family: 'Termina-W00-Demi';
+    font-size: 2em;
+    text-align: center;
+    margin-top: 5%;
+}
+.logo-companies {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-companies img { width: 10%; }
+
+/* Pagina de obrigado */
+.acknowledgment {
+    background-image: url(../assets/backgrounds/bg-acknowledgment.png);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+}
+.tag-acknowledgment {
+    width: 100%;
+    font-size: 0.6em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding-top: 5%; */
+}
+.tag-acknowledgment .tag-green, .tag-purple {
+    padding: 0.25% 2%;
+    margin-bottom: 1%;
+}
+.acknowledgment-information {
+    position: relative;
+    width: 90%;
+    margin: 3% auto 0;
+    color: #FFFFFF;
+    display: flex;
+    gap: 10%;
+}
+.acknowledgment-info {
+    width: 100%;
+    font-size: 1em;
+}
+.acknowledgment-info span {
+    font-family: 'ProximaNova-Bold';
+    font-size: 1.4em;
+    line-height: 1.2em;
+}
+.acknowledgment-info p {
+    font-family: 'ProximaNova-Regular';
+    font-size: 2.25em;
+    margin-bottom: 5%;
+    line-height: 1.2em;
+}
+.acknowledgment-buttons { display: flex; }
+.acknowledgment-video { width: 100%; }
+.acknowledgment-video iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 1.25rem;
+}
+
+/* Pagina de cpl */
+.cpl {
+    display: flex;
+    font-size: 1em;
+}
+.classes {
+    height: 100vh;
+    width: 20%;
+    background-color: #F9F4FD;
+}
+.logo-deploy-cpl {
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-deploy-cpl img { width: 45%; }
+.classes-available {
+    height: 85%;
+    padding: 15%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.classes-available::-webkit-scrollbar { display: none; }
+.card-availableavailable {
+    text-decoration: none;
+    color: #000000;
+    margin-bottom: 5%;
+    cursor: pointer;
+}
+.card-availableavailable:hover { color: #8D4BBA; }
+.card-availableavailable img {
+    width: 100%;
+    border-radius: 0.9375rem;
+}
+.card-availableavailable h3 {
+    font-family: 'ProximaNova-Bold';
+    font-size: 1.5em;
+    margin: 5% 0;
+}
+.card-availableavailable p {
+    font-family: 'ProximaNova-Regular';
+    font-size: 1em;
+}
+.video-classes {
+    height: 100vh;
+    width: 80%;
+    background-color: #8D4BBA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3% 15%;
+}
+.video-classes-title {
+    font-family: 'Termina-W00-Demi';
+    color: #FFFFFF; 
+    font-size: 3.5em;
+}
+.tag-dark-green {
+    font-family: 'ProximaNova-Bold';
+    font-size: 0.45em;
+    text-transform: uppercase;
+    background-color: #4EAB4C;
+    width: fit-content;
+    padding: 0.5% 2%;
+    border-radius: 0.9375rem;
+}
+.classes-workshop {
+    height: 55vh;
+    width: 100%;
+}
+.classes-workshop iframe {
+    height: 100%;
+    width: 100%;
+}
+.title-classes {
+    font-family: 'ProximaNova-Bold';
+    color: #FFFFFF;
+    font-size: 2.5em;
+}
+.description-classes {
+    font-family: 'ProximaNova-Regular';
+    font-size: 0.8em;
+}
+.buttons-cpl {
+    display: flex;
+    margin-top: 5%;
+    text-transform: uppercase;
+}
+
+/* desktop HD */
+@media only screen and (min-width: 1250px) and (max-width: 1440px) {
+    /* classes utilizadas em varios lugares */
+    .title { font-size: 2.5em; }
+    /* 1° scroll */
+    .info-call { font-size: 0.75em; }
+    .tag-green { border-radius: 0.625rem; }
+    .tag-purple { border-radius: 0.625rem; }
+    /* 2° scroll */
+    .card-classroom { font-size: 0.7em; }
+    .number-classroom {
+        height: 4.6875rem;
+        width: 4.6875rem;
+    }
+    /* 3° scroll */
+    /* 4° scroll */
+    /* 5° scroll */
+    .icon-benefits {
+        height: 4.6875rem;
+        width: 4.6875rem;
+    }
+    .benefits p { font-size: 1.1em; }
+    .form-subscription { font-size: 0.8em; }
+    /* 6° scroll */
+    .card-teacher { font-size: 0.71em; }
+    .description-teacher { margin-top: 1.5%; }
+
+    /* Pagina de obrigado */
+    .tag-acknowledgment { font-size: 0.4em; }
+    .acknowledgment-info { font-size: 0.72em; }
+
+    /* Pagina de cpl */
+    .cpl { font-size: 0.72em; }
+}
+
+/* tablet | Ipad */
+@media (max-width: 800px) {
+    .mobile { display: block !important; }
+    .desktop { display: none !important; }
+    .effect-1 { width: 50%; }
+    .effect-2 {
+        top: 38%;
+        width: 90%;
+    }
+    /* classes utilizadas em varios lugares */
+    .title { font-size: 2.5em; }
+    /* 1° scroll */
+    .logo-deploy {
+        left: 5%;
+        width: 20%;
+    }
+    .call { padding: 12% 0 5%; }
+    .info-call { font-size: 0.7em; }
+    .video-call iframe {
+        height: 35vh;
+        margin: 0;
+    }
+    /* 2° scroll */
+    .classroom {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-classroom {
+        width: 75%;
+        margin-bottom: 5%;
+    }
+    /* 3° scroll */
+    .edition {flex-direction: column; }
+    .info-edition { text-align: center; }
+    /* 4° scroll */
+    .testimonials { flex-direction: column; }
+    /* 5° scroll */
+    .card-subscription {
+        position: relative;
+        width: 90%;
+        padding: 5%;
+        flex-direction: column;
+    }
+    .card-subscription::before {
+        left: 5%;
+        top: 63%;
+        height: 0.0625rem;
+        width: 90%;
+    }
+    .info-subscription {
+        width: 100%;
+        padding: 0;
+    }
+    .form-dstrava {
+        width: 100%;
+        padding: 5% 0 0 0;
+    }
+    /* 6° scroll */
+    .card-teacher {
+        width: 90%;
+        padding: 5%;
+    }
+    .teacher { flex-direction: column; }
+    .image-teacher { width: 20%; }
+    .description-teacher {
+        width: 100%;
+        padding: 0;
+    }
+    .logo-companies { width: 100%; }
+    .logo-companies img { width: 15%; }
+
+    /* Pagina de obrigado */
+    .acknowledgment { height: auto; }
+    .tag-acknowledgment {
+        padding-top: 10%;
+        font-size: 0.6em;
+    }
+    .acknowledgment-information { flex-direction: column; }
+    .acknowledgment-video {
+        margin-top: 5%;
+        padding-bottom: 10%;
+    }
+    .acknowledgment-video iframe { height: 35vh; }
+
+    /* Pagina de cpl */
+    .cpl { flex-direction: column; }
+    .classes {
+        height: auto;
+        width: 100%;
+    }
+    .logo-deploy-cpl { padding: 5% 0; }
+    .logo-deploy-cpl img { width: 25%; }
+    .classes-available {
+        padding: 5%;
+        display: flex;
+        gap: 3%;
+    }
+    .card-availableavailable { width: 100%; }
+    .video-classes {
+        height: auto;
+        width: 100%;
+        padding: 5%;
+        font-size: 0.8em;
+    }
+    .classes-workshop { height: 35vh; }
+}
+
+/* mobile */
+@media (max-width: 480px) {
+    .effect-1 { width: 40%; }
+    .effect-2 { top: 40%; }
+    /* classes utilizadas em varios lugares */
+    .title {
+        font-size: 1.5em;
+        padding: 5% 0;
+    }
+    /* 1° scroll */
+    .call { padding: 15% 0 10%; }
+    .info-call { font-size: 0.5em; }
+    .tag-green { border-radius: 0.625rem; }
+    .tag-purple { border-radius: 0.625rem; }
+    .video-call iframe {
+        height: 23vh;
+        border-radius: 0.625rem;
+        margin: 5% 0;
+    }
+    /* 2° scroll */
+    .card-classroom {
+        width: 80%;
+        font-size: 0.7em;
+    }
+    .number-classroom {
+        height: 4.0625rem;
+        width: 4.0625rem;
+    }
+    /* 3° scroll */
+    .video-edition video { border-radius: 1.5625rem; }
+    /* 4° scroll */
+    /* 5° scroll */
+    .card-subscription { border-radius: 0.625rem; }
+    .card-subscription::before { top: 58%; }
+    .icon-benefits {
+        height: 3.75rem;
+        width: 3.75rem;
+    }
+    .benefits p {
+        width: 75%;
+        font-size: 1.1em;
+    }
+    .info-subscription {
+        width: 100%;
+        padding: 0;
+    }
+    .form-dstrava {
+        font-size: 0.55em;
+        padding: 10% 0 0 0;
+    }
+    .form-subscription input {
+        padding: 3%;
+        margin-bottom: 5%;
+        border-radius: 0.3125rem;
+    }
+    /* 6° scroll */
+    .card-teacher { font-size: 0.6em; }
+    .image-teacher { width: 30%; }
+
+    /* Pagina de obrigado */
+    .acknowledgment { min-height: 100vh; }
+    .tag-acknowledgment {
+        font-size: 0.4em;
+        padding-top: 15%;
+    }
+    .acknowledgment-info { font-size: 0.55em; }
+    .acknowledgment-buttons { flex-direction: column; }
+    .acknowledgment-buttons .btn-whatsapp { margin-bottom: 5%; }
+    .acknowledgment-video iframe { height: 25vh; }
+
+    /* Pagina de cpl */
+    .classes-available {
+        width: 100%;
+        overflow-x: auto;
+    }
+    .card-availableavailable { width: 100%; }
+    .card-availableavailable img { width: 11.25rem; }
+    .video-classes { font-size: 0.5em; }
+    .tag-dark-green { border-radius: 0.4rem; }
+    .classes-workshop { height: 25vh; }
+    .buttons-cpl { flex-direction: column; }
+    .btn-whatsapp-group { margin-bottom: 5%; }
+}

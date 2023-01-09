@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="icon" type="image/svg" href="assets/logo/lg-deploy-icon.svg">
+    <title>Aulas - Destravando a sua carreira de UI Designer - Deploy UX | Aprenda UI no Figma na Prática com quem realmente sabe o que está fazendo</title>
+
+    
+    <meta name="description" content="Só através de pesquisas e testes com usuários reais, é possível criar produtos incríveis - Deploy UX">
+    <meta name="keywords" content="UX, UI, User Experience, User Interface, Design">
+
+    <meta property="og:site_name" content="https://deployux.com">
+    <meta property="og:title" content="Experiência é muito mais que um site ou app bonitinho! " />
+    <meta property="og:description" content="Só através de pesquisas e testes com usuários reais, é possível criar produtos incríveis" />
+    <meta property="og:image" itemprop="image" content="./favicon.png">
+    <meta property="og:type" content="https://deployux.com"/>
+
+    
+    
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1001553703665119');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1001553703665119&ev=PageView&noscript=1" /></noscript>
+    <!-- End Facebook Pixel Code -->
+    
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179241590-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-179241590-1');
+    </script>
+
+
+
+    <script>
+        !function (w, d, t) {
+            w.TiktokAnalyticsObject = t; var ttq = w[t] = w[t] || []; ttq.methods = ["page", "track", "identify", "instances", "debug", "on", "off", "once", "ready", "alias", "group", "enableCookie", "disableCookie"], ttq.setAndDefer = function (t, e) { t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } }; for (var i = 0; i < ttq.methods.length; i++)ttq.setAndDefer(ttq, ttq.methods[i]); ttq.instance = function (t) { for (var e = ttq._i[t] || [], n = 0; n < ttq.methods.length; n++)ttq.setAndDefer(e, ttq.methods[n]); return e }, ttq.load = function (e, n) { var i = "https://analytics.tiktok.com/i18n/pixel/events.js"; ttq._i = ttq._i || {}, ttq._i[e] = [], ttq._i[e]._u = i, ttq._t = ttq._t || {}, ttq._t[e] = +new Date, ttq._o = ttq._o || {}, ttq._o[e] = n || {}; var o = document.createElement("script"); o.type = "text/javascript", o.async = !0, o.src = i + "?sdkid=" + e + "&lib=" + t; var a = document.getElementsByTagName("script")[0]; a.parentNode.insertBefore(o, a) };
+
+            ttq.load('C7JJLCAGCKHAS5EFU0A0');
+            ttq.page();
+        }(window, document, 'ttq');
+    </script>
+
+
+
+
+
+
+    
+</head>
+<body>
+    <div class="cpl">
+        <div class="classes">
+            <div class="logo-deploy-cpl">
+                <img src="./assets/logo/logo-deploy-black.png" alt="">
+            </div>
+            <div class="classes-available">
+                <a class="card-availableavailable" onclick="seletorAulas('aula1')">
+                    <img src="./assets/image/img-classroom-2.jpeg" alt="image-classroom">
+                    <h3>Aula 01</h3>
+                    <p>Conceitos básicos sobre UI Design, Figma e carreira</p>
+                </a>
+                <a class="card-availableavailable" onclick="seletorAulas('aula2')">
+                    <img src="./assets/image/img-classroom.jpeg" alt="image-classroom">
+                    <h3>Aula 02</h3>
+                    <p>Construindo a interface de um App no Figma</p>
+                </a>
+                <a class="card-availableavailable" onclick="seletorAulas('aula3')">
+                    <img src="./assets/image/img-classroom-1.jpeg" alt="image-classroom">
+                    <h3>Aula 03</h3>
+                    <p>Protótipo navegável + Abertura da turma D.strava</p>
+                </a>
+                <a class="card-availableavailable" onclick="seletorAulas('aula4')">
+                    <img src="./assets/image/img-classroom-3.jpeg" alt="image-classroom">
+                    <h3>Aula 04</h3>
+                    <p>Review dos projetos dos Alunos</p>
+                </a>
+            </div>
+        </div>
+        <div class="video-classes">
+            <div class="video-classes-title">
+                <div class="tag-dark-green">
+                    Workshop gratuito
+                </div>
+                UI Design e Figma
+            </div>
+            <div class="classes-workshop">
+                <iframe id="video" src="https://www.youtube.com/embed/0BAiBkUPfFE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="title-classes">
+                <div id="titulo">Aula 1</div>
+                <div id="descricao" class="description-classes">
+                    Conceitos básicos sobre UI Design, Figma e carreira
+                </div>
+            </div>
+            <div class="buttons-cpl">
+                <a class="btn-whatsapp-group" href="https://launchzap.app/18c2851">
+                    <img src="./assets/icons/i-whatsapp.svg" alt="whatsapp-icon">
+                    Entrar no grupo
+                </a>
+                <a id="materialApoio" class="btn-download" href="./assets/files/pdf-aula01.pdf" target="blanc">
+                    <img src="./assets/icons/i-download.svg" alt="download-icon">
+                    Material de apoio
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+
+    var teste = [
+        {
+            video: 'https://www.youtube.com/embed/0BAiBkUPfFE',
+            titulo: 'Aula 1',
+            descricao: 'Conceitos básicos sobre UI Design, Figma e carreira',
+            download: './assets/files/pdf-aula01.pdf'
+        },
+        {
+            video: 'https://www.youtube.com/embed/ayF89pio4IQ',
+            titulo: 'Aula 2',
+            descricao: 'Construindo a interface de um App no Figma',
+            download: './assets/files/pdf-aula02.pdf'
+        },
+        {
+            video: 'https://www.youtube.com/embed/WYJRkkEtT7c',
+            titulo: 'Aula 3',
+            descricao: 'Protótipo navegável + Abertura da turma D.strava',
+            download: './assets/files/pdf-aula01.pdf'
+        },
+        {
+            video: 'https://www.youtube.com/embed/T_dELgdFHN0',
+            titulo: 'Aula 4',
+            descricao: 'Review dos projetos dos Alunos',
+            download: './assets/files/pdf-aula01.pdf'
+        }
+    ]
+
+    function seletorAulas(aula) {
+        const video = document.getElementById('video');
+        const titulo = document.getElementById('titulo');
+        const descricao = document.getElementById('descricao');
+        const download = document.getElementById('materialApoio');
+
+        switch (aula) {
+            case 'aula1':
+                // console.log(aulas[0]);
+                video.src = 'https://www.youtube.com/embed/0BAiBkUPfFE';
+                titulo.innerHTML = 'Aula 1';
+                descricao.innerHTML = 'Conceitos básicos sobre UI Design, Figma e carreira';
+                download.href = './assets/files/pdf-aula01.pdf';
+                
+                break;
+            case 'aula2':
+                // console.log('teste aula 2');
+                video.src = 'https://www.youtube.com/embed/ayF89pio4IQ';
+                titulo.innerHTML = 'Aula 2'
+                descricao.innerHTML = 'Construindo a interface de um App no Figma';
+                download.href = './assets/files/pdf-aula02.pdf';
+                // liberacaoAulas('aula2');
+                break;
+            case 'aula3':
+                // console.log('teste aula 3');
+                video.src = 'https://www.youtube.com/embed/WYJRkkEtT7c';
+                titulo.innerHTML = 'Aula 3'
+                descricao.innerHTML = 'Protótipo navegável + Abertura da turma D.strava';
+                download.href = './assets/files/pdf-aula03.pdf';
+                // liberacaoAulas('aula3');
+                break;
+            case 'aula4':
+                // console.log('teste aula 4');
+                video.src = 'https://www.youtube.com/embed/T_dELgdFHN0';
+                titulo.innerHTML = 'Aula 4'
+                descricao.innerHTML = 'Review dos projetos dos Alunos';
+                download.href = './assets/files/pdf-aula04.pdf';
+                // liberacaoAulas('aula4');
+                break;
+        
+            default:
+                break;
+        }
+    }
+
+    function liberacaoAulas(aula) {
+        const now = new Date(); // Data de hoje
+        const past = new Date('2022-08-30'); // Outra data no passado
+        const diff = Math.abs(now.getTime() - past.getTime()); // subtrai uma data pela outra
+        const days = Math.ceil(diff / (1000 * 60 * 60 * 24)); // Divide o total pelo total de milisegundos correspondentes a 1 dia. (1000 milisegundos = 1 segundo).
+
+        // Mostra a diferença em dias
+        console.log( `Entre 30/08/2022 até agora já se passaram ${days} dias`);
+        
+
+        var nDia = 15 - days;
+
+        // console.log( `Entre 30/08/2022 até agora já se passaram ${nDia} dias`);
+        const video = document.getElementById('video');
+        video.src = './assets/image/img-classroom.png';
+
+        switch (aula) {
+            case 'aula2':
+                    if (nDia >= 10) {
+                        value
+                    } else {
+                        
+                    }
+                break;
+            case 'aula3':
+                
+                break;
+            case 'aula4':
+                
+                break;
+        
+            default:
+                break;
+        }
+
+        // video.src = './assets/image/img-classroom.png';
+        if (nDia >= 10) {
+            video.src = 'https://www.youtube.com/embed/0BAiBkUPfFE';
+        } else if (nDia >= 20) {
+            video.src = 'https://www.youtube.com/embed/ayF89pio4IQ';
+        } else if (nDia >= 30) {
+            video.src = 'https://www.youtube.com/embed/WYJRkkEtT7c';
+        }
+    }
+
+</script>

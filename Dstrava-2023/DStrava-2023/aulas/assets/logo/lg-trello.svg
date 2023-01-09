@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="140" viewBox="0 0 140 140">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0091e6"/>
+      <stop offset="1" stop-color="#0079bf"/>
+    </linearGradient>
+    <clipPath id="clip-lg-trello">
+      <rect width="140" height="140"/>
+    </clipPath>
+  </defs>
+  <g id="lg-trello" clip-path="url(#clip-lg-trello)">
+    <g id="trello" transform="translate(40.471 40.471)">
+      <path id="Caminho_10261" data-name="Caminho 10261" d="M5.767,0H53.291a5.767,5.767,0,0,1,5.767,5.767V53.291a5.767,5.767,0,0,1-5.767,5.767H5.767A5.767,5.767,0,0,1,0,53.291V5.767A5.767,5.767,0,0,1,5.767,0Z" fill="url(#linear-gradient)"/>
+      <path id="Caminho_10262" data-name="Caminho 10262" d="M2.768,0H15.245a2.768,2.768,0,0,1,2.768,2.768v20.3a2.768,2.768,0,0,1-2.768,2.768H2.768A2.768,2.768,0,0,1,0,23.07V2.768A2.768,2.768,0,0,1,2.768,0Z" transform="translate(33.368 7.678)" fill="#fff"/>
+      <path id="Caminho_10263" data-name="Caminho 10263" d="M2.768,0H15.245a2.768,2.768,0,0,1,2.768,2.768V37.834A2.768,2.768,0,0,1,15.245,40.6H2.768A2.768,2.768,0,0,1,0,37.834V2.768A2.768,2.768,0,0,1,2.768,0Z" transform="translate(7.678 7.678)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

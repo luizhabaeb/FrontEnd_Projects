@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <clipPath id="clip-i-iniciantes">
+      <rect width="50" height="50"/>
+    </clipPath>
+  </defs>
+  <g id="i-iniciantes" clip-path="url(#clip-i-iniciantes)">
+    <text id="_" data-name="🧒" transform="translate(1 40)" fill="#202a46" font-size="37" font-family="SegoeUIEmoji, Segoe UI Emoji"><tspan x="0" y="0">🧒</tspan></text>
+  </g>
+</svg>
