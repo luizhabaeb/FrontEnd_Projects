@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Termina-W00-Demi';
+  src: url('Termina-W00-Demi.eot');
+  src: url('Termina-W00-Demi.eot?#iefix') format('embedded-opentype'),
+       url('Termina-W00-Demi.svg#Termina-W00-Demi') format('svg'),
+       url('Termina-W00-Demi.ttf') format('truetype'),
+       url('Termina-W00-Demi.woff') format('woff'),
+       url('Termina-W00-Demi.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

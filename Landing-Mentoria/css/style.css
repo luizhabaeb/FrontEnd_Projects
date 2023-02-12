@@ -1,0 +1,876 @@
+@font-face {
+    font-family: 'ProximaNova-Regular';
+    src: url('../assets/fonts/ProximaNova-Regular/ProximaNova-Regular.eot');
+    src: url('../assets/fonts/ProximaNova-Regular/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/ProximaNova-Regular/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg'),
+        url('../assets/fonts/ProximaNova-Regular/ProximaNova-Regular.ttf') format('truetype'),
+        url('../assets/fonts/ProximaNova-Regular/ProximaNova-Regular.woff') format('woff'),
+        url('../assets/fonts/ProximaNova-Regular/ProximaNova-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ProximaNova-Bold';
+    src: url('../assets/fonts/ProximaNova-Bold/ProximaNova-Bold.eot');
+    src: url('../assets/fonts/ProximaNova-Bold/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/ProximaNova-Bold/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg'),
+        url('../assets/fonts/ProximaNova-Bold/ProximaNova-Bold.ttf') format('truetype'),
+        url('../assets/fonts/ProximaNova-Bold/ProximaNova-Bold.woff') format('woff'),
+        url('../assets/fonts/ProximaNova-Bold/ProximaNova-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Termina-W00-Demi';
+    src: url('../assets/fonts/Termina-W00-Demi/Termina-W00-Demi.eot');
+    src: url('../assets/fonts/Termina-W00-Demi/Termina-W00-Demi.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/Termina-W00-Demi/Termina-W00-Demi.svg#Termina W00 Demi') format('svg'),
+        url('../assets/fonts/Termina-W00-Demi/Termina-W00-Demi.ttf') format('truetype'),
+        url('../assets/fonts/Termina-W00-Demi/Termina-W00-Demi.woff') format('woff'),
+        url('../assets/fonts/Termina-W00-Demi/Termina-W00-Demi.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.body {
+    font-family: 'ProximaNova-Regular';
+    font-size: 1em;
+    color: #ffffff;
+    margin: 0;    
+}
+
+.mobile { display: none !important; }
+.desktop { display: block !important; } 
+
+.background-deploy {
+    position: relative;
+    background-color: #1E1E1E;
+}
+
+/* definições para utilizar em toda a página */
+.title-mentorships {
+    font-family: "Termina-W00-Demi";
+    font-size: 3.8em;
+    margin-bottom: 3%;
+}
+.subTitle-mentorships {
+    font-family: "ProximaNova-Bold";
+    font-size: 2.3em;
+    margin-bottom: 3%;
+}
+.bg-default {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.txt-black {
+    color: #000000;
+}
+
+/* definindo os botões */
+.btn-purple {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'ProximaNova-Bold';
+    font-size: 2em;
+    color: #ffffff;
+    background-color: #8d4bba;
+    border: 0.125rem solid #8d4bba;
+    padding: 1% 5%;
+    text-decoration: none;
+    border-radius: 3.125rem;
+}
+
+.btn-purple img {
+    width: 1.5em;
+    margin-left: 1.875rem;
+    border: 0.125rem solid #8d4bba;
+    border-radius: 50%;
+}
+
+.btn-purple:hover {
+    background-color: #ffffff;
+    color: #8d4bba;
+}
+
+/* Detalhes Imagem de fundo*/
+.img-detail1 {
+    position: absolute;
+    top: 22%;
+    left: 0;
+    width: 60%;
+}
+.img-detail2 {
+    position: absolute;
+    top: 42%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 60%;
+}
+.img-detail3 {
+    position: absolute;
+    top: 63%;
+    right: 0;
+    width: 60%;
+}
+.img-detail4 {
+    position: absolute;
+    top: 83%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 65%;
+}
+
+/* nav */ 
+.nav-hidden {
+    display: none;
+}
+.nav-deploy {
+    position: fixed;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%;
+    height: 8vh;
+    width: 100%;
+    z-index: 500;
+}
+.logo-deploy {
+    width: 60%;
+}
+.links {
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+}
+.links a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #000000;
+}
+
+
+/* Primeiro Scroll */
+.home-mentorships {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('./../assets/backgrounds/bg-mentorships.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-home {
+    width: 90%;
+    background: rgba(255, 255, 255, 0.1);
+    background-blend-mode: overlay, normal;
+    backdrop-filter: blur(5.9375rem);
+    -webkit-backdrop-filter: blur(5.9375rem);
+    border-radius: 1.1875rem;
+    margin: 3% 0;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+}
+.informative-home {
+    width: 60%;
+}
+.tag {
+    width: fit-content;
+    font-family: 'ProximaNova-Bold';
+    font-size: 2.8em;
+    background-color: #ff87be;
+    padding: 0 2%;
+    border-radius: 0.625rem;
+    text-transform: uppercase;
+}
+.title-home {
+    font-family: 'Termina-W00-Demi';
+    font-size: 3em;
+    line-height: 1em;
+    margin: 3% 0;
+    padding-right: 5%;
+}
+.subTitle-home {
+    font-family: 'ProximaNova-Bold';
+    font-size: 2.2em;
+}
+.description-home {
+    font-size: 1.75em;
+    margin: 3% 0;
+}
+
+.image-home  {
+    width: 40%;
+}
+
+.image-home img {
+    width: 100%;
+}
+
+.title-customers {
+    font-family: 'Termina-W00-Demi';
+    font-size: 2em;
+    margin-bottom: 3%;
+    align-items: center;
+}
+
+/* CAROUSEL */
+.slider {
+    background-color: #d9d9d9;
+}
+.slider .items {
+    margin: 0 3.125em;
+}
+.slider .items img {
+    width: 9.375em;
+    filter: grayscale(1);
+    margin: 0 auto;
+}
+
+/* Segundo Scroll */
+.home-nextLevel {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    gap: 5%;
+}
+.video-nextLevel {
+    width: 50%;
+}
+.video {
+    width: 100%;
+    border-radius: 1.875rem;
+}
+
+.informative-nextLevel {
+    width: 50%;
+    padding: 5% 0;
+}
+
+.informative-nextLevel p {
+    font-size: 1.66em;
+}
+
+/* Terceiro Scroll */
+.how-works {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 5%;
+}
+.works {
+    display: flex;
+    gap: 5%;
+}
+.card-works {
+    width: 100%;
+    background-color: rgba(141, 75, 186, 0.2);
+    border: 1px solid #8d4bba;
+    border-radius: 1.25rem;
+    padding: 3% 1%;
+    text-align: left;
+    font-family: "ProximaNova-Bold";
+    font-size: 1.2em;
+}
+.card-works img {
+    width: 25%;
+    margin-bottom: 10%;
+}
+.works-description {
+    width: 70%;
+    margin: 0 auto;
+    padding: 5% 0;
+}
+.works-description p {
+    font-size: 1.8em;
+    margin-bottom: 3%;
+}
+
+/* Quarto Scroll */
+.learn {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.card-learn {
+    font-family: "Termina-W00-Demi";
+    font-size: 1.7em;
+    color: #000000;
+    background-color: #ffffff;
+    text-align: left;
+    padding: 2% 5%;
+    margin-bottom: 1%;
+    border-radius: 0.625rem;
+}
+.card-learn span {
+    color: #b935f8;
+}
+
+/* Quinto Scroll */
+.indicated {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.indicated .title-mentorships {
+    padding: 0 20%;
+}
+.target-audience {
+    display: flex;
+    gap: 5%;
+}
+.card-public {
+    height: 23.75rem;
+    width: 25%;
+    display: flex;
+    align-items: flex-end;
+    padding: 3%;
+    border-radius: 1.25rem;
+    font-family: "ProximaNova-Bold";
+    font-size: 1.8em;
+    text-align: left;
+}
+.bg-students { background-image: url('./../assets/backgrounds/bg-students.png'); }
+.bg-ux-professionals { background-image: url('./../assets/backgrounds/bg-ux-professionals.png'); }
+.bg-freelancers { background-image: url('./../assets/backgrounds/bg-freelancers.png'); }
+.bg-growth-professionals { background-image: url('./../assets/backgrounds/bg-growth-professionals.png'); }
+
+/* Sexto Scroll */
+.mentors {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.align-mentors {
+    display: flex;
+    gap: 5%;
+}
+.card-mentors {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    text-align: left;
+    padding: 3%;
+    border-radius: 11.875rem 1.25rem 1.25rem 1.25rem;
+}
+.card-mentors img {
+    width: 50%;
+    border-radius: 50%;
+    margin-bottom: 5%;
+}
+.title-mentors {
+    font-family: "Termina-W00-Demi";
+    font-size: 2.5em;
+    color: #000000;
+    margin-bottom: 5%;
+}
+.card-mentors p {
+    font-size: 1.5em;
+    color: #5f5f5f;
+    margin-bottom: 5%;
+}
+
+/* Sétimo Scroll */
+.students {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.align-testimonial {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+.testimonial {
+    width: 100%;
+}
+.testimonial img {
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+/* Oitavo Scroll */
+.price {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.value {
+    font-family: "Termina-W00-Demi";
+    font-size: 3em;
+    margin-bottom: 3%;
+}
+.value span {
+    font-size: 1.35em;
+}
+.benefits {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    font-size: 1.5em;
+    width: 35%;
+    
+}
+.benefits img {
+    width: 1.5em;
+    margin-right: 1rem;
+}
+.bd-benefits {
+    border-bottom: 1px solid #ffffff;
+}
+.btn-subscription {
+    width: 35%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn-subscription .btn-purple {
+    white-space: nowrap;
+    padding: 3% 15%;
+}
+.btn-subscription img {
+    width: 80%;
+    margin-top: 10%;
+}
+
+/* Nono Scroll */
+.faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5%;
+    background-color: rgb(255, 255, 255);
+}
+.title-faq {
+    font-family: "Termina-W00-Demi";
+    font-size: 3em;
+    color: #000000;
+    text-align: center;
+    padding: 5% 0;
+}
+.card-faq {
+    width: 80%;
+    background-color: #8D4BBA;
+    margin-bottom: 2%;
+    border-radius: 0.625rem;
+}
+.questions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 2%;
+}
+.questions p {
+    font-size: 1.6em;
+    margin: 0;
+}
+.questions img {
+    width: 2.5em;
+}
+.answer {
+    display: none;
+    padding: 1% 2%;
+    font-size: 1.3em;
+}
+
+/* Resolução - Desktop HD */
+@media only screen and (min-width: 1250px) and (max-width: 1440px){
+    .body{
+        font-size: 0.72em;
+    }
+
+    /* Primeiro/Segundo Scroll */
+    .informative-nextLevel p{
+        font-size: 1.65em;
+    }
+
+    /* Terceiro/Quarto/Quinto Scroll */
+    .card-public{
+        height: 17.5rem;
+    }
+
+    /* Sexto Scroll */
+    .card-mentors{
+        border-radius: 8.125rem 1.25rem 1.25rem 1.25rem;
+    }
+    
+    @media only screen and (min-width: 1400px) and (max-width: 1600px){
+        /*Segundo Scroll */
+        .informative-nextLevel p {
+            font-size: 1.73em;
+        }
+    }
+}
+
+/* Tablet/iPad */
+@media (max-width: 800px) {
+    .mobile { display: block !important; }
+    .desktop { display: none !important; }
+    
+    .body { font-size: 0.72em; }
+
+    /* Utilizado em várias partes (assim como fiz anteriormente)  */
+    .subTitle-mentorships {
+        font-size: 3em;
+    }
+
+    /* Botões */
+    .btn-purple {
+        font-size: 2.8em;
+        padding: 3% 5%;
+    }
+
+    /* Nav */ 
+    .fixed {
+        position: fixed;
+        width: 100%;
+        z-index: 500;
+    }
+    .nav-mobile {
+        background-color: #ffffff;
+        height: 8vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 3%;
+    }
+    .icon-nav {
+        width: 7%;
+    }
+    .links-hidden {
+        display: none;
+    }
+    .links-mobile {
+        height: 70vh;
+        background-color: #ffffff;
+        border-radius: 0 0 0 2.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 5% 10%;
+        justify-content: space-between;
+    }
+    .links-mobile a {
+        font-family: "ProximaNova-Bold";
+        font-size: 3em;
+        color: #000000;
+        text-decoration: none;
+    }
+
+    /* Primeiro Scroll */
+    .home-mentorships {
+        background-image: url('./../assets/backgrounds/bg-mentorships-tb.png');
+    }
+    .card-home {
+        width: 90%;
+        margin: 2% 0 15%;
+        padding: 5%;
+        flex-wrap: wrap;
+        margin-top: 10vh;
+    }
+    .informative-home {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 8%;
+    }
+    .tag {
+        font-size: 2.2em;
+        padding: 0 6%;
+    }
+    .title-home {
+        line-height: 1.5em;
+        margin: 3% 0 5%;
+        padding: 0;
+    }
+    .subTitle-home {
+        font-size: 2.5em;
+    }
+    .description-home {
+        font-size: 2.3em;
+        margin: 3% 0 10%;
+    }
+    .image-home {
+        width: 100%;
+        text-align: center;
+    }
+    .link-below img {
+        width: 6%;
+    }
+    .title-customers {
+        font-size: 3em;
+        margin-bottom: 5%;
+    }
+
+    /* Segundo Scroll */
+    .home-nextLevel {
+        width: 85%;
+        flex-wrap: wrap;
+        padding-top: 10%;
+    }
+    .video-nextLevel {
+        width: 100%;
+        padding-top: 10%;
+    }
+    .informative-nextLevel {
+        width: 100%;
+    }
+    .informative-nextLevel p {
+        font-size: 2.5em;
+    }
+
+    /* Terceiro Scroll */
+    .how-works {
+        width: 100%;
+        padding-top: 15%;
+    }
+    .works {
+        overflow-x: auto;
+        padding: 0 8%;
+    }
+    .works::-webkit-scrollbar {
+        display: none;
+    }
+    .card-works {
+        padding: 5% 2%;
+        font-size: 1.65em;
+    }
+    .card-works-description {
+        width: 12.5rem;
+    }
+    .works-description {
+        width: 80%;
+    }
+
+    /* Quarto Scroll */
+    .learn {
+        width: 85%;
+        padding-top: 15%;
+    }
+    .card-learn {
+        font-size: 2.4em;
+        margin-bottom: 2%;
+    }
+
+    /* Quinto Scroll */
+    .indicated {
+        width: 85%;
+        padding-top: 15%;
+    }
+    .indicated .title-mentorships {
+        padding: 0;
+    }
+    .target-audience {
+        flex-wrap: wrap;
+    }
+    .card-public {
+        height: 20.3125rem;
+        width: 47.5%;
+        padding: 5%;
+        font-size: 2.2em;
+        margin-bottom: 5%;
+    }
+
+    /* Sexto Scroll */
+    .mentors { padding-top: 15%; }
+    .align-mentors {
+        flex-wrap: wrap;
+    }
+    .card-mentors {
+        padding: 8%;
+        border-radius: 9.375rem 1.25rem 1.25rem 1.25rem;
+        margin-bottom: 5%;
+    }
+
+    /* Sétimo Scroll */
+    .students {
+        width: 85%;
+        padding-top: 15%;
+    }
+    .align-testimonial {
+        flex-wrap: wrap;
+    }
+    .testimonial img {
+        width: 80%;
+    }
+    .float-left { float: left; }
+    .float-right { float: right; }
+
+    /* Oitavo Scroll */
+    .price { padding-top: 15%; }
+    .value {
+        margin: 3% 0;
+    }
+    .benefits {
+        padding: 4%;
+        width: 90%;
+    }
+    .btn-subscription {
+        width: 75%;
+    }
+
+    /* Nono Scroll */
+    .title-faq {
+        padding: 5% 30%;
+    }
+    .questions {
+        padding: 2%;
+    }
+    .questions p {
+        font-size: 2em;
+    }
+    .answer {
+        padding: 2%;
+        font-size: 1.8em;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+    .body { font-size: 0.42em; }
+
+    /* Utilizado em vários lugares */
+    .title-mentorships {
+        font-size: 3.2em;
+    }
+    .subTitle-mentorships {
+        font-size: 2.5em;
+    }
+
+    /* NAV */ 
+    .icon-nav {
+        width: 10%;
+    }
+    .links-mobile {
+        padding: 15% 10%;
+    }
+
+    /* Primeiro scroll */
+    .home-mentorships {
+        background-image: url('./../assets/backgrounds/bg-mentorships-mb.png');
+    }
+    .card-home {
+        border-radius: 0.625rem;
+    }
+    .informative-home {
+        margin: 0;
+    }
+    .tag {
+        border-radius: 0.3125rem;
+    }
+    .link-below img {
+        width: 8%;
+    }
+
+    /* Segundo Scroll */
+    .home-nextLevel { padding-top: 20%; }
+    .video {
+        border-radius: 0.625rem;
+    }
+    .informative-nextLevel p {
+        font-size: 2.2em;
+    }
+
+    /* Terceiro Scroll */
+    .how-works { padding-top: 20%; }
+    .card-works {
+        border-radius: 0.9375rem;
+    }
+    .card-works-description {
+        width: 7.5rem;
+    }
+    .works-description p {
+        font-size: 2.4em;
+        margin-bottom: 5%;
+    }
+
+    /* Quarto Scroll */
+    .learn { padding-top: 20%; }
+    .card-learn {
+        font-size: 2em;
+    }
+
+    /* Quinto Scroll */
+    .indicated { padding-top: 20%; }
+    .card-public {
+        height: 9.3125rem;
+        font-size: 1.8em;
+        border-radius: 0.625rem;
+    }
+
+    /* Sexto Scroll */
+    .mentors { padding-top: 20%; }
+    .card-mentors {
+        border-radius: 4.375rem 1.25rem 1.25rem 1.25rem;
+    }
+    .card-mentors p {
+        font-size: 1.8em;
+    }
+
+    /* Sétimo Scroll */
+    .students { padding-top: 20%; }
+
+    /* Oitavo Scroll */
+    .price {
+        padding: 20% 0 10%;
+    }
+    .benefits {
+        padding: 5%;
+    }
+
+    /* Nono Scroll */
+    .card-faq {
+        border-radius: 0.3125rem;
+    }
+    .questions {
+        padding: 3%;
+    }
+    .answer {
+        padding: 3%;
+    }
+}
+
+/* g4 */
+@media (max-width: 365px) {
+    .body { font-size: 0.4em; }
+}
+
+/* Pixel 2 XL - iPhone 6/7/8 Plus */
+@media only screen and (min-width: 400px) and (max-width: 420px) {
+    .body { font-size: 0.46em; }
+}

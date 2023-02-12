@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" type="image/svg" href="assets/logo/lg-deploy-icon.svg">
+    <title>Teste Deploy</title>
+    <link rel="stylesheet" href="css/slick.css">
+</head>
+
+<body class="body">
+    <div class="background-deploy">
+        <img src="./assets/image/img-detail1.png" class="img-detail1" alt="">
+        <img src="./assets/image/img-detail3.png" class="img-detail2" alt="">
+        <img src="./assets/image/img-detail2.png" class="img-detail3" alt="">
+        <img src="./assets/image/img-detail3.png" class="img-detail4" alt="">
+
+        <!-- Navbar Desktop -->
+        <div class="nav-hidden">
+            <div class="nav-deploy">
+                <a href="#home">
+                    <img src="./assets/logo/lg-deploy.svg" class="logo-deploy" alt="logo-deploy">
+                </a>
+                <div class="links ">
+                    <a href="#nextLevel">Oque é</a>
+                    <a href="#howWorks">Como funciona</a>
+                    <a href="#learn">Conteúdo</a>
+                    <a href="#indicated">Para quem</a>
+                    <a href="#mentors">Mentores</a>
+                    <a href="#students">Depoimentos</a>
+                    <a href="#subscription">Valores</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+            </div>
+        </div>
+        <!-- Nav Mobile -->
+        <div class="mobile fixed">
+            <div class="nav-mobile ">
+                <a href="#home" onclick="openNav('false')">
+                    <img src="./assets/logo/lg-deploy.svg" class="logo-deploy" alt="logo-deploy">
+                </a>
+                <img onclick="openNav()" src="./assets/icons/i-nav-close.svg" id="nav-icon" class="icon-nav" alt="">
+            </div>
+            <div class="links-hidden">
+                <div class="links-mobile">
+                    <a href="#nextLevel" onclick="openNav()">Oque é</a>
+                    <a href="#howWorks" onclick="openNav()">Como funciona</a>
+                    <a href="#learn" onclick="openNav()">Conteúdo</a>
+                    <a href="#indicated" onclick="openNav()">Para quem</a>
+                    <a href="#mentors" onclick="openNav()">Mentores</a>
+                    <a href="#students" onclick="openNav()">Depoimentos</a>
+                    <a href="#subscription" onclick="openNav()">Valores</a>
+                    <a href="#faq" onclick="openNav()">FAQ</a>
+                </div>
+            </div>
+        </div>
+
+        <!--Primeiro Scroll - Home Mentorships -->
+        <section id="home">
+            <div class="home-mentorships">
+                <div class="card-home">
+                    <div class="informative-home">
+                        <div class="tag">
+                            Mentoria de Carreira
+                        </div>
+                        <div class="title-home">
+                            Nós te ajudamos a acelerar sua carreira em UX/UI
+                        </div>
+                        <div class="subTitle-home">
+                            Aprenda na prática cm quem trabalha em projetos reas.
+                        </div>
+                        <div class="description-home">
+                            Com uma metodologia útnica da Deploy você será capaz de implementar os principais
+                            frameworks,
+                            processos, e ferramentas do UX/UI em seus projetos/trabalhos e realmente se DIFERENCIAR no
+                            mercado! E nossa jornada começa no dia 31/10, teremos 4 encontros ao vivo!
+                        </div>
+                        <a class="btn-purple" href="#subscription">
+                            Quero me inscrever!
+                            <img src="./assets/icons/i-btn-next.svg" alt="button-icon">
+                        </a>
+                    </div>
+                    <div class="image-home desktop">
+                        <img src="./assets/image/img-informative.png" alt="image-informative">
+                    </div>
+                    <div class="image-home mobile">
+                        <img src="./assets/image/img-informative-mb.png" alt="image-informative">
+                        <a class="link-below" href="">
+                            <img src="./assets/icons/i-below-white.svg" alt="icon-below">
+                        </a>
+                    </div>
+                </div>
+                <div class="title-customers">
+                    Alguns de nossos clientes:
+                </div>
+            </div>
+        </section>
+
+        <!--  CAROUSEL  -->
+        <div class="slider autoplay">
+            <div class="items"><img src="./assets/logo/lg-2w-energia.svg" alt=""></div>
+            <div class="items"><img src="./assets/logo/lg-4student.svg" alt=""></div>
+            <div class="items"><img src="./assets/logo/lg-coliiv.svg" alt=""></div>
+            <div class="items"><img src="./assets/logo/lg-colorado.svg" alt=""></div>
+            <div class="items"><img src="./assets/logo/lg-corona.svg" alt=""></div>
+            <div class="items"><img src="./assets/logo/lg-eyemobile.svg" alt=""></div>
+            <div class="items"><img src="./assets/logo/lg-gophone.svg" alt=""></div>
+            <div class="items"><img src="./assets/logo/lg-hoengaarden.svg" alt=""></div>
+            <div class="items"><img src="./assets/logo/lg-jansport.svg" alt=""></div>
+            <div class="items"><img src="./assets/logo/lg-kipling.svg" alt=""></div>
+            <div class="items"><img src="./assets/logo/lg-meisou.svg" alt=""></div>
+            <div class="items"><img src="./assets/logo/lg-qi-network.svg" alt=""></div>
+            <div class="items"><img src="./assets/logo/lg-receita-digital.svg" alt=""></div>
+            <div class="items"><img src="./assets/logo/lg-red-nose.svg" alt=""></div>
+            <div class="items"><img src="./assets/logo/lg-rossi.svg" alt=""></div>
+            <div class="items"><img src="./assets/logo/lg-safe2go.svg" alt=""></div>
+            <div class="items"><img src="./assets/logo/lg-worc.svg" alt=""></div>
+        </div>
+
+        <!-- Segundo Scroll - Next Level -->
+        <section id="nextLevel">
+            <div class="home-nextLevel">
+                <div class="video-nextLevel">
+                    <video class="video" src="./assets/video/vd-mentorship.mp4" autoplay loop muted></video>
+                </div>
+                <div class="informative-nextLevel">
+                    <div class="title-mentorships">
+                        A um passo do seu próximo nível.
+                    </div>
+                    <div class="subTitle-mentorships">
+                        Aprenda na prática com quem trabalha com projetos reais!
+                    </div>
+                    <p>Hoje todo mundo quer ter resultado rápidos, como também é comum se perder com muita teoria e não
+                        conseguir aplicá-la, não é mesmo?</p>
+                    <p>Pensando nos profissionais e estudantes que não tem tempo a perder e desejam aplicar seus
+                        conhecimentos na prática, a Deploy UX idealizou uma metodologia inédita totalmente voltada para
+                        realidade do mercado em um programa de implementação e mentoria em grupo.</p>
+                    <p>Você irá aprender e aplicar todos os frameworks, ferramentas, metodologias e processos que
+                        utilizamos
+                        com CLIENTES REAIS.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--Terceiro Scroll - How it Works-->
+        <section id="howWorks">
+            <div class="how-works">
+                <div class="title-mentorships">
+                    Como funciona?
+                </div>
+                <div class="works">
+                    <div class="card-works">
+                        <img src="./assets/icons/i-encounters.svg" alt="icon-encounters">
+                        <div class="class-works-description">4 encontros online com profissionais experientes</div>
+                    </div>
+                    <div class="card-works">
+                        <img src="./assets/icons/i-challenge.svg" alt="icon-encounters">
+                        <div class="class-works-description">A cada encontro terá um desafio para colocar em prática
+                        </div>
+                    </div>
+                    <div class="card-works">
+                        <img src="./assets/icons/i-doubts.svg" alt="icon-encounters">
+                        <div class="class-works-description">Traga suas dúvidas e desafios que iremos te ajudar</div>
+                    </div>
+                    <div class="card-works">
+                        <img src="./assets/icons/i-community.svg" alt="icon-encounters">
+                        <div class="class-works-description">Acesso a comunidade fechada no Slack, com suporte, network
+                            e conteúdos</div>
+                    </div>
+                    <div class="card-works">
+                        <img src="./assets/icons//i-bonus.svg" alt="icon-encounters">
+                        <div class="class-works-description">Bônus:</div>
+                        <div class="class-works-description">10 horas de conteúdo extra sobre UX, UI e Figma</div>
+                    </div>
+                </div>
+                <div class="works-description">
+                    <p>Durante 4 semanas teremos 1 encontro semanal onde vamos abordar um determinado tema e passar um
+                        desafio para você colocar em prática!</p>
+                    <p>A cada encontro você sairá com um passo a passo do que implementar em seus projetos, empresas ou
+                        trabalho para você realmente se diferenciar.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Quarto Scroll - Learn-->
+        <section id="learn">
+            <div class="learn">
+                <div class="title-mentorships">
+                    O que eu aprendo na mentoria?
+                </div>
+                <div class="card-learn">
+                    <span>Aula 1:</span> User Research e Negócio
+                </div>
+                <div class="card-learn">
+                    <span>Aula 2:</span> Como gerar ideias e priorizá-las
+                </div>
+                <div class="card-learn">
+                    <span>Aula 3:</span> Design de Interfaces na prática
+                </div>
+                <div class="card-learn">
+                    <span>Aula 4:</span> Portfolio, Currículo, Linkedin e Carreira
+                </div>
+            </div>
+
+            <!-- Quinto Scroll - Indicated -->
+            <section id="indicated">
+                <div class="indicated">
+                    <div class="title-mentorships">
+                        Para quem é indicado a mentoria em grupo?
+                    </div>
+                    <div class="target-audience">
+                        <div class="card-public bg-students bg-default">
+                            Estudantes de UX/UI
+                        </div>
+                        <div class="card-public bg-ux-professionals bg-default">
+                            Quem já trabalha com UX/UI
+                        </div>
+                        <div class="card-public  bg-freelancers bg-default">
+                            Freelancers
+                        </div>
+                        <div class="card-public bg-growth-professionals bg-default">
+                            Profissionais de Growth
+                        </div>
+                    </div>
+                    <div class="works-description">
+                        <p>Ela atende todos o níveis de conhecimento pelo fato de ter uma didática SIMPLES e funcional.
+                        </p>
+                        <p>Na Mentoria em Grupo você consegue aprender tudo o que precisa desde da parte técnica até
+                            alavancar sua carreira.</p>
+                        <p>Você poderá contar com dois mentores experientes que estão a total disposição para te ajudar!
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sexto Scroll - Mentors -->
+            <section id="mentors">
+                <div class="mentors">
+                    <div class="title-mentorships">
+                        Quem são os mentores?
+                    </div>
+                    <div class="align-mentors">
+                        <div class="card-mentors">
+                            <img src="./assets/image/ph-nick.png" alt="foto-nicholas-franca">
+                            <div class="title-mentors">
+                                Nicholas França
+                            </div>
+                            <p>Nicholas França, também conhecido como Nick, é co-fundador de Deploy e CPO da startup
+                                Maestro ABM, com mais de 10 anos de experiência na área de Design, realizando vários
+                                projetos desde startups até grandes empresas, como Corona, Kipling e Hoegaarden.</p>
+                            <p>Hoje ele se dedica a compartilhar conhecimento, democratizando o ensino na área de UX/UI
+                                com conteúdos semanais gratuitos! Vêm ajudando alunos de todo o Brasil a iniciar uma
+                                nova carreira, conseguir o primeiro emprego ou até mesmo se tornar um freelancer!</p>
+                        </div>
+                        <div class="card-mentors">
+                            <img src="./assets/image/ph-izza.png" alt="foto-izza-simoes">
+
+                            <div class="title-mentors">
+                                Izza Simões
+                            </div>
+                            <p>Passou por empresas no Brasil e na Inglaterra como Tv2U international, Workverse, e
+                                participou de projetos para empresas como Nestlé, Ericsson Latam, Bradesco, Randstad,
+                                entre
+                                outras, além de ser empreendedora em série.</p>
+                            <p>Atualmente é Head de UX Design na Deploy, trabalhando de Portugual, participa de todo o
+                                processo de desenvolvimento de novos produtos e serviços inovadores para clientes
+                                nacionais
+                                e internacionais.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sétimo Scroll - Students -->
+            <section id="students">
+                <div class="students">
+                    <div class="title-mentorships">
+                        O que nossos alunos acham?
+                    </div>
+                    <div class="align-testimonial">
+                        <div class="testimonial">
+                            <img class="float-left" src="./assets/image/img-testimonial-1.png" alt="">
+                            <img class="float-right" src="./assets/image/img-testimonial-2.png" alt="">
+                            <img class="float-left" src="./assets/image/img-testimonial-3.png" alt="">
+                            <img class="float-right" src="./assets/image/img-testimonial-4.png" alt="">
+                        </div>
+                        <div class="testimonial">
+                            <img class="float-left" src="./assets/image/img-testimonial-5.png" alt="">
+                            <img class="float-right" src="./assets/image/img-testimonial-6.png" alt="">
+                            <img class="float-left" src="./assets/image/img-testimonial-7.png" alt="">
+                            <img class="float-right" src="./assets/image/img-testimonial-8.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Oitavo Scroll - Price -->
+            <section id="subscription">
+                <div class="price">
+                    <div class="title-mentorships">
+                        Qual o valor da mentoria?
+                    </div>
+                    <div class="value">
+                        <div>10x <span>R$ 49,70</span></div>
+                        <div>ou R$ 497,00 à vista</div>
+                    </div>
+                    <div class="benefits bd-benefits">
+                        <img src="assets/icons/i-checked-white.svg" alt="">
+                        4 Aulas ao vivo e mãos na massa (31/10, 07/11, 14, 11 e 21/11)
+                    </div>
+                    <div class="benefits bd-benefits">
+                        <img src="assets/icons/i-checked-white.svg" alt="">
+                        Acesso à mentoria em grupo
+                    </div>
+                    <div class="benefits bd-benefits">
+                        <img src="assets/icons/i-checked-white.svg" alt="">
+                        Acesso as gravações da mentoria
+                    </div>
+                    <div class="benefits bd-benefits">
+                        <img src="assets/icons/i-checked-white.svg" alt="">
+                        Grupo de Suporte
+                    </div>
+                    <div class="benefits bd-benefits">
+                        <img src="assets/icons/i-checked-white.svg" alt="">
+                        10 horas de conteúdo EXTRA
+                    </div>
+                    <div class="benefits bd-benefits">
+                        <img src="assets/icons/i-checked-white.svg" alt="">
+                        Garantia de 7 dias
+                    </div>
+                    <div class="btn-subscription">
+                        <a class="btn-purple"
+                            href="https://app.livus.com.br/checkout/206830c0-63ad-4694-8c2e-9b78e8e5a4f5/2601"
+                            target="blanc">
+                            Quero me inscrever!
+                        </a>
+                        <img src="./assets/logo/lg-payments.svg" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Nono - FAQ -->
+            <section id="faq">
+                <div class="faq">
+                    <div class="title-faq">
+                        Perguntas Frequentes
+                    </div>
+                    <div class="card-faq">
+                        <div class="questions" onclick="answerFaq(0)">
+                            <p>Posso me inscrever se sou iniciante?</p>
+                            <img src="./assets/icons/i-open-faq.svg" class="i-faq" alt="">
+                        </div>
+                        <div class="answer">
+                            Sim, a nossa metodologia possibilita acelerar seus resultados.
+                        </div>
+                    </div>
+                    <div class="card-faq">
+                        <div class="questions" onclick="answerFaq(1)">
+                            <p>Para quem é indicado o programa de implementação da Deploy?</p>
+                            <img src="./assets/icons/i-open-faq.svg" class="i-faq" alt="">
+                        </div>
+                        <div class="answer">
+                            Para estudantes e profissionais que desejam acelerar seus resultados em UX/UI.
+                        </div>
+                    </div>
+                    <div class="card-faq">
+                        <div class="questions" onclick="answerFaq(2)">
+                            <p>Tem certificado?</p>
+                            <img src="./assets/icons/i-open-faq.svg" class="i-faq" alt="">
+                        </div>
+                        <div class="answer">
+                            Sim, ao final do programa você recebe um certificado que pode ser utilizado no seu currículo
+                            ou faculdade.
+                        </div>
+                    </div>
+                    <div class="card-faq">
+                        <div class="questions" onclick="answerFaq(3)">
+                            <p>Se eu perder uma aula, posso assistir as gravações?</p>
+                            <img src="./assets/icons/i-open-faq.svg" class="i-faq" alt="">
+                        </div>
+                        <div class="answer">
+                            Sim, você terá 1 ano para assistir as gravações!
+                        </div>
+                    </div>
+                    <div class="card-faq">
+                        <div class="questions" onclick="answerFaq(4)">
+                            <p>Quais as formas de pagamento?</p>
+                            <img src="./assets/icons/i-open-faq.svg" class="i-faq" alt="">
+                        </div>
+                        <div class="answer">
+                            Você pode finalizar sua compra com o cartão de crédito, parcelando em até 10x, ou também
+                            pode pagar à vista no boleto ou PIX.
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+</body>
+
+</html>
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/mentorships.js"></script>

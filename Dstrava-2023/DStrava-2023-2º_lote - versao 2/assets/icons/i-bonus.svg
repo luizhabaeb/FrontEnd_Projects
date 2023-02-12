@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="76" height="87" viewBox="0 0 76 87">
+  <defs>
+    <clipPath id="clip-i-bonus">
+      <rect width="76" height="87"/>
+    </clipPath>
+  </defs>
+  <g id="i-bonus" clip-path="url(#clip-i-bonus)">
+    <text id="_" data-name="🎁" transform="translate(-10 71)" font-size="78" font-family="SegoeUIEmoji, Segoe UI Emoji"><tspan x="0" y="0">🎁</tspan></text>
+  </g>
+</svg>
